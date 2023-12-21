@@ -1,0 +1,84 @@
+#container{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+
+@keyframes face-animation {
+    0%{top: 5px;}
+    50%{top: 15px;}
+    100%{top: 5px;}
+}
+@keyframes inner-face-animation {
+    0%{top: 15px;}
+    50%{top: -15px;}
+    100%{top: 15px;}
+}
+
+#face{
+    margin: auto;
+    position: relative;
+    top: 5px;
+    background-color: #4e96cc;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    animation-name: face-animation;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+#inner-face{
+    margin: auto;
+    position: relative;
+    top: 15px;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    animation-name: inner-face-animation;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+#left-eye, #right-eye{
+    background-color: aliceblue;
+    border-radius: 50%;
+    width: 25%;
+    height: 25%;
+    position: relative;
+    display: inline-block;
+    margin: 2%;
+    top: 35%;
+    left: 10%;
+}
+
+#left-inner, #right-inner{
+    background-color: #221e34;
+    border-radius: 50%;
+    width: 70%;
+    height: 70%;
+    position: absolute;
+}
+
+#left-inner{
+    right: 10%;
+    top: 10%;
+}
+
+#right-inner{
+    left: 10%;
+    top: 10%;
+}
+
+#mouth{
+    border: 7px solid black;
+    position: relative;
+    border-top: none;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    width: 15%;
+    height: 3%;
+    left: 30%;
+    top: 35%;
+}
+

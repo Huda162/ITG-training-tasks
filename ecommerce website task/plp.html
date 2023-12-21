@@ -1,0 +1,137 @@
+<html>
+
+<head>
+    <title>online shop</title>
+    <link rel="stylesheet" href="plp.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="plp.js"></script>
+</head>
+
+<body>
+    <header>
+        <i class="ph ph-list" id="mob-list"></i>
+        <h1 id="brand">Club Monaco</h1>
+        <span id="desktop-menu">
+            <a href="" class="sections">New Arrivals</a>
+            <a href="" class="sections">Women</a>
+            <a href="" class="sections">Men</a>
+            <a href="" class="sections">Sale</a>
+            <a href="" class="sections">Features</a>
+            <a href="" class="sections">Holiday Shop</a>
+        </span>
+        <span id="icons">
+            <i class="ph ph-heart"></i>
+            <i class="ph ph-magnifying-glass"></i>
+            <i class="ph ph-user"></i>
+            <i class="ph ph-shopping-bag"></i>
+        </span>
+    </header>
+    <div id="products-body">
+        <div id="head-note">
+            <p id="note">free shipping for orders of $150 or more with code <b>freeship</b>. <a href="" class="link">see
+                    details</a>
+            </p>
+        </div>
+        <div id="products-list">
+            <p id="breadcrump">Women / Clothing / <span id="current">Dresses</span></p>
+            <div id="filter-bar">
+                <input type="checkbox" name="filter" id="filter" class="check" onchange="changeFilterState()">
+                <label for="filter" id="filter-label">
+                    <i class="ph ph-plus-circle"></i>
+                    show filters</label>
+                <span id="products-title">
+                    <h2>Clothes</h2>
+                </span>
+                <span id="shown-products-info">
+                    1-30 of 90 item <a href="" class="link">View All</a> <span id="hide-in-small">Newest <i
+                            class="ph ph-caret-down"></i></span>
+                </span>
+            </div>
+            <button id="refine" onclick="showRefine()">refine</button>
+            <div id="product">
+                <div class="filter-list" id="filter-list-wide">
+                    <input type="checkbox" name="Type" id="type-list" class="check" onchange="showTypes()">
+                    <label for="type-list" class="filters-labels">
+                        <p>Type</p>
+                        <i class="ph ph-plus"></i>
+                    </label>
+                    <div id="types" class="checkable-list">
+                        <input type="checkbox" id="dresses" onchange="filterProducts()">
+                        <label for="dresses">Dresses</label>
+                        <br>
+                        <input type="checkbox" id="blouses" onchange="filterProducts()">
+                        <label for="blouses">Blouses</label>
+                        <br>
+
+                        <input type="checkbox" id="jackets" onchange="filterProducts()">
+                        <label for="jackets">Jackets</label>
+                    </div>
+                    <input type="checkbox" name="Size" id="size-list" class="check" >
+                    <label for="size-list" class="filters-labels">
+                        <p>Size</p>
+                        <i class="ph ph-plus"></i>
+                    </label>
+                    <input type="checkbox" name="Color" id="color-list" class="check">
+                    <label for="color-list" class="filters-labels">
+                        <p>Color</p>
+                        <i class="ph ph-plus"></i>
+                    </label>
+                    <input type="checkbox" name="Price" id="price-list" class="check">
+                    <label for="price-list" class="filters-labels">
+                        <p>Price</p>
+                        <i class="ph ph-plus"></i>
+                    </label>
+                    <button class="buttons clear" onclick="clearChecks()">Clear</button>
+                </div>
+                <div id="products-cards">
+                   
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="list-page">
+        <div id="shadow-page" onclick="hideRefine()"></div>
+        <div id="mobile-filter-list-body">
+            <div id="list-head">
+                <h2>Refine</h2>
+                <span id="buttons-wrapper">
+                    <button class="buttons clear">Clear</button>
+                    <button class="buttons" id="done">Done</button>
+                </span>
+            </div>
+            <div id="list-body">
+                <select name="sort" id="sort">
+                    <option value=" " disabled selected>Sort By</option>
+                    <option value="price">Price</option>
+                    <option value="newest">Newest</option>
+                    <option value="oldest">Oldest</option>
+                    <div class="filter-list">
+                        <input type="checkbox" name="Type" id="type-list-mobile" class="check">
+                        <label for="type-list-mobile" class="filters-labels">
+                            <p>Type</p>
+                            <i class="ph ph-plus"></i>
+                        </label>
+                        <input type="checkbox" name="Size" id="size-list-mobile" class="check">
+                        <label for="size-list-mobile" class="filters-labels">
+                            <p>Size</p>
+                            <i class="ph ph-plus"></i>
+                        </label>
+                        <input type="checkbox" name="Color" id="color-list-mobile" class="check">
+                        <label for="color-list-mobile" class="filters-labels">
+                            <p>Color</p>
+                            <i class="ph ph-plus"></i>
+                        </label>
+                        <input type="checkbox" name="Price" id="price-list-mobile" class="check">
+                        <label for="price-list-mobile" class="filters-labels">
+                            <p>Price</p>
+                            <i class="ph ph-plus"></i>
+                        </label>
+                    </div>
+                </select>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

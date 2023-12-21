@@ -1,0 +1,91 @@
+body{
+    background-color: #028284;
+}
+
+#drop-check{
+    display: none;
+}
+
+#drop{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    cursor: pointer;
+}
+
+@keyframes initial-state-1 {
+    0% {transform: translate(0px, 70px) rotate(45deg);}
+    50% {transform: translate(0px, 70px);}
+    100% {transform: translate(0px, 0px)}
+}
+@keyframes initial-state-2 {
+    0% {transform: translate(0px, 00px) rotate(45deg);}
+    50% {transform: translate(0px, 0px);}
+    100% {transform: translate(0px, 0px)}
+}
+@keyframes initial-state-3 {
+    0% {transform: translate(0px, -70px) rotate(-45deg);}
+    50% {transform: translate(0px, -70px);}
+    100% {transform: translate(0px, 0px)}
+}
+
+#drop > :nth-child(1){
+    animation-name: initial-state-1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+#drop > :nth-child(2){
+    animation-name: initial-state-2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+#drop > :nth-child(3){
+    animation-name: initial-state-3;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.line{
+    width: 250px;
+    height: 0%;
+    border: 15px solid #fefefc;
+    border-radius: 20px;
+    margin: 40px;
+    position: static;
+    animation-name: initial-state;
+    animation-duration: 1s;
+}
+
+@keyframes first-line {
+    0% {transform: translate(0px, 0px);}
+    50% {transform: translate(0px, 70px);}
+    100% {transform: translate(0px, 70px) rotate(45deg);}
+}
+@keyframes second-line {
+    0% {transform: translate(0px, 0px);}
+    50% {transform: translate(0px, 0px);}
+    100% {transform: translate(0px, 0px) rotate(45deg);}
+}
+@keyframes third-line {
+    0% {transform: translate(0px, 0px);}
+    50% {transform: translate(0px, -70px);}
+    100% {transform: translate(0px, -70px) rotate(-45deg);}
+}
+
+#drop-check:checked ~ #drop > :nth-child(1){
+    animation-name: first-line;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#drop-check:checked ~ #drop > :nth-child(2){
+    animation-name: second-line;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#drop-check:checked ~ #drop > :nth-child(3){
+    animation-name: third-line;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}

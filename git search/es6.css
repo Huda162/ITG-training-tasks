@@ -1,0 +1,61 @@
+body{
+    background: linear-gradient(to right, #000000, #414040);
+    color: rgb(255, 255, 255);
+}
+
+span{
+    display: flex;
+    justify-content: start;
+    margin: 5px;
+}
+
+#username, #search{
+    margin: 0px;
+    height: 40px;
+    border: 1px solid gray;
+    opacity: 0.7;
+}
+
+#username{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 200px;
+    padding: 10px;
+}
+
+#search{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 80px;
+}
+
+.user{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px;
+    background-color: gray;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+    opacity: 0.8;
+}
+
+.avatar{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.left-container{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+.right-container{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+

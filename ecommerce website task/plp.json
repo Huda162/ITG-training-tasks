@@ -1,0 +1,92 @@
+{
+    "products":[ 
+        {
+        "name" : "dress 1",
+        "price": "99$",
+        "imageUrl" : "designs/dress1.jpg",
+        "colors" :[
+            "black",
+            "brown",
+            "blue"
+        ],
+        "category": "dresses"
+    },
+        {
+        "name" : "jecket 1",
+        "price": "99$",
+        "imageUrl" : "designs/jacket1.jpg",
+        "colors" :[
+            "black",
+            "brown",
+            "blue"
+        ],
+        "category": "jeckets"
+    },
+        {
+        "name" : "jacket 2",
+        "price": "99$",
+        "imageUrl" : "designs/jacket2.jpg",
+        "colors" :[
+            "black",
+            "brown",
+            "blue"
+        ],
+        "category": "jackets"
+    },
+        {
+        "name" : "jacket 3",
+        "price": "99$",
+        "imageUrl" : "designs/jacket3.jpg",
+        "colors" :[
+            "black",
+            "brown",
+            "blue"
+        ],
+        "category": "jackets"
+    },
+        {
+        "name" : "jacket 4",
+        "price": "99$",
+        "imageUrl" : "designs/jacket4.jpg",
+        "colors" :[
+            "black",
+            "brown",
+            "blue"
+        ],
+        "category": "jackets"
+    },
+        {
+        "name" : "blouse 1",
+        "price": "99$",
+        "imageUrl" : "designs/blouse1.jpg",
+        "colors" :[
+            "black",
+            "brown",
+            "blue"
+        ],
+        "category": "blouses"
+    },
+        {
+        "name" : "blouse 2",
+        "price": "99$",
+        "imageUrl" : "designs/blouse2.jpg",
+        "colors" :[
+            "black",
+            "brown",
+            "blue"
+        ],
+        "category": "blouses"
+    },
+        {
+        "name" : "dress 2",
+        "price": "99$",
+        "imageUrl" : "designs/dress2.jpg",
+        "colors" :[
+            "black",
+            "brown",
+            "blue"
+        ],
+        "category": "dresses"
+    }
+]
+}

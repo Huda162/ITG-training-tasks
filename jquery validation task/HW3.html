@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            email and password
+        </title>
+        <link rel="stylesheet" href="HW3.css">
+        <!-- <script src="HW3.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+        <script src="HW3-jquery.js"></script>
+
+    </head>
+    <body>
+        <div>
+            <form onsubmit="return false" id="validation-form" novalidate="novalidate">
+                <label for="email">Email <sup>*</sup></label>
+                <input type="email" id="email" name="email">
+                <p id="email-alert"></p>
+                <label for="password">Password <sup>*</sup></label>
+                <input type="password" id="password" name="password">
+                <p id="password-alert"></p>
+                <button id="submit" >Submit</button>
+            </form>
+        </div>
+    </body>
+</html>

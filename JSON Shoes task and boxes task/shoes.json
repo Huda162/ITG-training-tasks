@@ -1,0 +1,25 @@
+{
+    "shoes-id" : "001",
+    "shoes-color" :{
+        "brown" : {
+            "38": "true",
+            "39": "false",
+            "40": "true"
+        },
+        "black" : {
+            "38": "true",
+            "39": "true",
+            "40": "true"
+        },
+        "nude" : {
+            "38": "false",
+            "39": "false",
+            "40": "true"
+        },
+        "white" : {
+            "38": "true",
+            "39": "true",
+            "40": "false"
+        }
+    }
+}

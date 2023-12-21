@@ -1,0 +1,89 @@
+/* task 4 */
+
+#container {
+    background-color: yellow;
+    width: 200px;
+    height: 100px;
+    position: relative;
+}
+
+#transition-div1 {
+    background-color: none;
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    opacity: 0.8;
+    left: 20%;
+    bottom: 20%;
+    transition: width 2s, height 2s;
+}
+
+#transition-div2 {
+    background-color: none;
+    border-right: 3px solid black;
+    border-top: 3px solid black;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    opacity: 0.8;
+    right: 20%;
+    top: 20%;
+    transition: width 2s, height 2s;
+}
+
+#hoverable {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    border: none;
+    background: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: large;
+    font-weight: bold;
+}
+
+#container:hover #transition-div1,
+#container:hover #transition-div2 {
+    width: 157px;
+    height: 77px;
+}
+
+#container:hover #hoverable {
+    color: purple;
+}
+
+
+
+
+
+/* task 5 */
+#moving-checkbox {
+    display: none;
+  }
+  
+  #moving-button {
+    cursor: pointer;
+    background-color: pink;
+    padding: 5px;
+  }
+
+  #moving-div {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    margin-left: 0;
+    transition: margin-left 2s ;
+  }
+  
+  #moving-checkbox:checked + #moving-div {
+    margin-left: 200px;
+  }
+  
+  
